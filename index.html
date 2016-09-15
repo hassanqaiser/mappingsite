@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Realestate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- base url -->
+    <base href="/">
+
+    <!--Bootstrap-->
+    <link href="app/assets/bootstrap/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Bootstrap Material Design -->
+    <!--<link rel="stylesheet" type="text/css" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-material-design/dist/css/ripples.min.css">-->
+
+    <!-- MD Icons-->
+     <!--<link href="app/assets/MD/icon.css?family=Material+Icons" rel="stylesheet">
+     <link href="app/assets/MD/css.css?family=Roboto:300,400,500,700" rel="stylesheet">
+     -->
+
+    <!-- ESRI Styles-->
+    <link rel="stylesheet" href="https://js.arcgis.com/3.17/esri/themes/calcite/dijit/calcite.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.17/esri/css/esri.css">
+
+    <!-- App Main Styles-->
+    <link rel="stylesheet" href="app/assets/styles/main.css">
+    
+    <!-- 1. Configure and load ESRI libraries -->
+    <script>
+      window.dojoConfig = {
+        async: true
+      };
+    </script>
+    <script src="https://js.arcgis.com/3.17/"></script>
+
+    <!-- Load webpack bundles-->
+    <script>
+      require(["/dist/vendor.bundle.js", "/dist/main.bundle.js"], function (vendor, main) {});
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <div class="container-fluid">
+      <my-app>Loading...</my-app>
+    </div>
+
+    <script src="app/assets/bootstrap/jquery.min.js"></script>
+    <script src="app/assets/bootstrap/bootstrap.min.js"></script>
+
+    <!--<script src="node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+    <script>
+    $(function () {
+        $.material.init();
+    });
+    </script> -->
+
+  </body>  
+</html>
